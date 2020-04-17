@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">latihan2</string>
+    <string name="mainuser">Username</string>
+    <string name="emal">Email</string>
+    <string name="register">register</string>
+    <string name="cowo">Male</string>
+    <string name="cewe">Female</string>
+    <string-array name="darah">
+        <item name="">Blood Type</item>
+        <item name="A">A</item>
+        <item name="B">B</item>
+        <item name="O">O</item>
+        <item name="AB">AB</item>
+    </string-array>
+
+    <string-array name="reshus">
+        <item name="">Reshus</item>
+        <item name="Positive">Positive</item>
+        <item name="Negative">Negative</item>
+    </string-array>
+    <string name="phone">Phone Number</string>
+    <string name="pass">Password</string>
+    <string name="repass">Retype Password</string>
+    <string name="person">Personal</string>
+    <string name="organ">Organization</string>
+
+    <string-array name="gawe">
+        <item name="">Job</item>
+        <item name="Pelajar">Pelajar</item>
+        <item name="Wiraswasta">Wiraswasta</item>
+        <item name="PNS">PNS</item>
+        <item name="Lainnya">Lainnya</item>
+    </string-array>
+    <string name="darahku">Blood Type O</string>
+    <string name="rumah">Home Address</string>
+    <string name="loc">Default Location</string>
+    <string name="terms">Agree with Terms and Condition</string>
+    <string name="reg">Registrasi</string>
+    <string name="hampir">Almost There</string>
+    <string name="thampir">Thank you for Registering with us. One More\nStep, you need to Check your Email\nto Active your Account</string>
+    <string name="namaku">Toni Rizky Awalludin</string>
+    <string name="home_blood_give">68</string>
+    <string name="home_blood_received">107</string>
+    <string name="home_blood_thanks">180</string>
+    <string name="home_title_blood_give">Blood Give</string>
+    <string name="home_title_blood_received">Blood Received</string>
+    <string name="home_title_blood_thanks">Thanks</string>
+    <string name="home_title_search_donor">Search Donor</string>
+    <string name="home_title_blood_needed">Blood Needed</string>
+    <string name="home_title_near">Search donor near you</string>
+    <string name="home_needed">3 User need blood</string>>
+    <string name="home_btn_msg">Message</string>>
+    <string name="home_donor_history">Donor History</string>
+    <string name="home_new_msg">4 New Messages</string>
+    <string name="home_give_received">3 Gives, 1 Received</string>
+    <string name="ver1">Verify your Account</string>
+    <string name="ver2">We have send verification code to your email</string>
+    <string name="ver3">enter verification code here...</string>
+    <string name="ver4">"doesn't get the code ? "</string>
+    <string name="ver5">Resend</string>
+
+
+</resources>

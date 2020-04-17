@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_header"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/btn_back_reg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/ic_header_back"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_header_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/btn_back_reg"
+            android:text="@string/register"
+            android:textColor="@color/lycheewhite"
+            android:textSize="25dp" />
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/profile_circle"
+        tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/input_user_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:hint="@string/mainuser"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints" />
+
+
+        <EditText
+            android:id="@+id/input_email_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_user_reg"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:hint="@string/emal"
+            android:inputType="textEmailAddress"
+            tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/input_phone_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/input_email_reg"
+        android:inputType="text|number"
+        android:autofillHints=""
+        tools:ignore="MissingConstraints" />
+
+    <RadioButton
+        android:id="@+id/radio_male_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/cowo"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/input_phone_reg"
+        tools:ignore="MissingConstraints" />
+
+    <RadioButton
+        android:id="@+id/radio_female_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/cewe"
+        android:layout_marginStart="100dp"
+        android:layout_below="@id/input_phone_reg"
+        android:layout_toRightOf="@id/radio_male_reg"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinner_blood_reg"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/darah"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/radio_male_reg"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinner_reshus_reg"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/reshus"
+        android:layout_below="@id/radio_male_reg"
+        android:layout_toRightOf="@id/spinner_blood_reg"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/input_pass_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pass"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/spinner_blood_reg"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/input_repass_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/repass"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/input_pass_reg" />
+
+    <RadioButton
+        android:id="@+id/radio_person_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/person"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/input_repass_reg" />
+
+    <RadioButton
+        android:id="@+id/radio_organ_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/organ"
+        android:layout_marginStart="80dp"
+        android:layout_below="@+id/input_repass_reg"
+        android:layout_toRightOf="@id/radio_person_reg" />
+
+    <Spinner
+        android:id="@+id/spinner_job_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_person_reg"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:dropDownSelector="@drawable/ic_register_dropdown"
+        android:entries="@array/gawe" />
+
+
+    <EditText
+        android:id="@+id/input_address_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/rumah"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/spinner_job_reg" />
+
+    <EditText
+        android:id="@+id/spinner_loc_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/loc"
+        android:drawableEnd="@drawable/ic_blood_needed_location"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/input_address_reg" />
+
+    <CheckBox
+        android:id="@+id/cb_term_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/terms"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/spinner_loc_reg" />
+
+        <Button
+            android:id="@+id/kirim1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb_term_reg"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/buttonborder2"
+            android:text="@string/reg"
+            android:textColor="@color/lightblue" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
